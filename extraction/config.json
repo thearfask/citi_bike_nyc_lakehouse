@@ -1,0 +1,16 @@
+{
+  "source_name": "nyc_citibike",
+  "source_url": "https://s3.amazonaws.com/tripdata/",
+  "s3_prefix": "JC-",
+  "zip_pattern": "JC-(\\d{4})(\\d{2})-citibike-tripdata(?:\\.csv)?\\.zip",
+  "volume_path": "/Volumes/nyc_citi_bike_catalog/audit/data/landing/trips/",
+  "mode": "historical",
+  "start_month": "2025-01",
+  "end_month": "2025-03",
+  "dry_run": false,
+  "force": false,
+  "tun_type": "manual",
+  "max_files_per_run": 24,
+  "audit_events_table": "nyc_citi_bike_catalog.audit.audit_events_tbl",
+  "audit_files_table": "nyc_citi_bike_catalog.audit.audit_files_tbl"
+}
