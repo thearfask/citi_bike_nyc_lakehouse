@@ -4,7 +4,7 @@
   "s3_prefix": "JC-",
   "zip_pattern": "JC-(\\d{4})(\\d{2})-citibike-tripdata(?:\\.csv)?\\.zip",
   "volume_path": "/Volumes/nyc_citi_bike_catalog/audit/data/landing/trips/",
-  "mode": "historical",
+  "mode": "incremental",
   "run_type": "auto",
   "start_month": "2025-09",
   "end_month": null,
