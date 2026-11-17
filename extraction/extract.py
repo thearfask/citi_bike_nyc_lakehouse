@@ -15,6 +15,29 @@ import xml.etree.ElementTree as ET
 NS = {"s": "http://s3.amazonaws.com/doc/2006-03-01/"}
 
 
+def advance_month_config(config_path):
+    config_path = Path(config_path)
+
+    with open(config_path, "r") as f:
+        config = json.load(f)
+
+    current_month = config["end_month"]
+
+    year, month = map(int, current_month.split("-"))
+
+    if month == 12:
+        next_month = f"{year + 1}-01"
+    else:
+        next_month = f"{year}-{month + 1:02d}"
+
+    config["start_month"] = next_month
+    config["end_month"] = next_month
+
+    with open(config_path, "w") as f:
+        json.dump(config, f, indent=2)
+
+    print(f"Next extraction month: {next_month}")
+
 def now():
     return datetime.now(timezone.utc).isoformat()
 
