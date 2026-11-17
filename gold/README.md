@@ -1,0 +1,1 @@
+Gold transformations are not yet present in upstream dev. Add approved tables to config/gold_schema.json when implemented.\n

@@ -1,0 +1,7 @@
+{
+  "schema_change_requested": true,
+  "schema_dry_run": false,
+  "allow_destructive": false,
+  "max_pending_files": 24,
+  "bronze_dry_run": false
+}

@@ -1,0 +1,164 @@
+{
+  "catalog": "nyc_citi_bike_catalog",
+  "schema": "audit",
+  "evolution_policy": "controlled",
+  "tables": {
+    "audit_events_tbl": {
+      "version": 1,
+      "columns": [
+        {
+          "name": "event_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "batch_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zip_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "stage",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_zip_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_url",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "data_month",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "target_path",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "size_bytes",
+          "type": "long",
+          "nullable": true
+        },
+        {
+          "name": "file_count",
+          "type": "integer",
+          "nullable": true
+        },
+        {
+          "name": "started_at",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "finished_at",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "error_message",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "rows_read",
+          "type": "long",
+          "nullable": true
+        },
+        {
+          "name": "rows_written",
+          "type": "long",
+          "nullable": true
+        }
+      ],
+      "migrations": []
+    },
+    "audit_files_tbl": {
+      "version": 1,
+      "columns": [
+        {
+          "name": "file_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "extraction_event_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "batch_id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zip_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_zip_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "source_url",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "data_month",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "csv_name",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "csv_path",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "file_size_bytes",
+          "type": "long",
+          "nullable": true
+        },
+        {
+          "name": "extracted_at",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "migrations": []
+    }
+  }
+}

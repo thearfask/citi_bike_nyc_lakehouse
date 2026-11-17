@@ -1,0 +1,6 @@
+{
+  "catalog": "nyc_citi_bike_catalog",
+  "schema": "gold",
+  "evolution_policy": "controlled",
+  "tables": {}
+}

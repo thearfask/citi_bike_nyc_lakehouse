@@ -1,0 +1,104 @@
+{
+  "catalog": "nyc_citi_bike_catalog",
+  "schema": "bronze",
+  "evolution_policy": "controlled",
+  "tables": {
+    "raw_trips_tbl": {
+      "version": 1,
+      "source_format": "csv",
+      "columns": [
+        {
+          "name": "ride_id",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "rideable_type",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "started_at",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "ended_at",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "start_station_name",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "start_station_id",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "end_station_name",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "end_station_id",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "start_lat",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "start_lng",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "end_lat",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "end_lng",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        },
+        {
+          "name": "member_casual",
+          "type": "string",
+          "nullable": true,
+          "required": true
+        }
+      ],
+      "metadata_columns": [
+        {
+          "name": "source_key",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "batch_id",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "migrations": []
+    }
+  }
+}
