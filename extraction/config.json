@@ -6,7 +6,7 @@
   "volume_path": "/Volumes/nyc_citi_bike_catalog/audit/data/landing/trips/",
   "mode": "incremental",
   "run_type": "auto",
-  "start_month": "2023-01",
+  "start_month": "2020-01",
   "end_month": null,
   "dry_run": false,
   "force": false,
